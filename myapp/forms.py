@@ -5,3 +5,4 @@ class RegisterForm(forms.ModelForm):
     class Meta:
         model = Register
         fields = ('name','phone','email','body')
+        

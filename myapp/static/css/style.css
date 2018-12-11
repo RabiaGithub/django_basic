@@ -16,19 +16,20 @@ body {
 }
 
 .modal-dialog {
-  width: 360px;
-  height:600px !important;
+  width: 900px;
+  height:950px !important;
 }
 .modal-content {
 /* 80% of window height */
 height: 60%;
-background-color:red;
+background-color:white;
+color:black;
 }        
 .modal-header {
-background-color: red;
-padding:16px 16px;
-color:#FFF;
-border-bottom:2px dashed red;
+background-color: black;
+padding:18px 18px;
+color:red;
+border-bottom:2px white;
 }
 
 /* .modal-dialog {
