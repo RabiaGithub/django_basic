@@ -24,7 +24,11 @@
   <link rel="stylesheet" href={% static "lib/owlcarousel/assets/owl.carousel.min.css" %}>
   <link rel="stylesheet" href={% static "lib/lightbox/css/lightbox.min.css" %}>
 
-  <!-- Main Stylesheet File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- Main Stylesheet File -->
   <link rel="stylesheet" href={% static "css/style.css" %}>
 
   <!-- =======================================================
@@ -57,7 +61,7 @@
           <li><a href="#portfolio">Gallery</a></li>
           <li><a href="#team">Our Clients</a></li>
           <li><a href="#contact">Contact</a></li>
-        <li>  <li>
+          <li><a href="#register">Register</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -164,9 +168,9 @@
           </div>
           <div class="col-lg-4 box">
             <i class="ion-ios-calendar-outline"></i>
-            <h4 class="title"><a href="">DAY One</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-              occaecati cupiditate non provident</p>
+            <h4 class="title" style="font-size:22"><a href="">DAY One</a></h4>
+            <p class="description" style="font-size:18"><strong>Presentation Day</strong></p>
+            <p class="description">Where you get a chance to showcase your IDEA along with a PPT, in front of all our ZONAL WINNERS... </p>
           </div>
 
       
@@ -175,9 +179,9 @@
 
           <div class="col-lg-4 box">
             <i class="ion-ios-calendar-outline "></i>
-            <h4 class="title"><a href="">DAY Two</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur</p>
+            <h4 class="title" style="font-size:22" ><a href=""><strong>DAY Two</strong></a></h4>
+            <p class="description" style="font-size:18"><strong>Execution Day</strong></p>
+            <p class="description">Now is the High time when your work will speak on your behalf. Time to flaunt your Running Models...</p>
           </div>
 
           <div class="col-lg-1">
@@ -194,7 +198,7 @@
 
         <header class="section-header">
           <h3>About AIRC</h3>
-          <p class="text-justify">aIRC(All India Research Championship) is an initiative by TechieNest Pvt. Ltd. to provide a
+          <p class="text-justify" style="font-size:18">aIRC(All India Research Championship) is an initiative by TechieNest Pvt. Ltd. to provide a
             platform to the students across the nation to showcase their talent and empower their technical skills.
             The mission of organizing aIRC is to inspire students to be technology leaders and innovators, engaging
             them in exciting tasks which builds up their research & development skills and foster all-rounded life
@@ -207,7 +211,7 @@
         </header>
         <header class="section-header">
           <h3>About TECHIENEST</h3>
-          <p class="text-justify">TechieNest is a certified ISO 9001:2008, technology service provider and training organization.
+          <p class="text-justify" style="font-size:18">TechieNest is a certified ISO 9001:2008, technology service provider and training organization.
             The soul mission of founders is to facilitate the education, research and development program;
             all under one roof. In a very short span of time our team has successfully delivered the impactful
             service to more than 200 colleges, including the most prestigious institutions of India, such as
@@ -219,19 +223,18 @@
         </header>
 
 
-        <div class="row about-cols">
+        <div class="row-eq-height about-cols">
 
-          <div class="col-md-4 wow fadeInUp">
+          <div class=" col-md-4 wow fadeInUp">
             <div class="about-col">
               <div class="img">
                 <img class="img-fluid" src={% static "img/portfolio/g1.jpg" %}>
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Our Mission</a></h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
+              <p style="text-align:justify">
+                At TechieNest, we believe to serve curious engineers with all new and implement their
+own ideas coming out with a useful product to serve citizens of our nation and the world.
               </p>
             </div>
           </div>
@@ -243,10 +246,10 @@
                 <div class="icon"><i class="ion-ios-list-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Our Plan</a></h2>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem  doloremque laudantium, totam rem
-                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo.
+              <p style="text-align:justify">
+               The aim of aIRC is to provide a platform for all innovative students to present their
+ideas and boost the knowledge and make the students aware about the latest
+technologies which will become the future of the world.
               </p>
             </div>
           </div>
@@ -258,9 +261,8 @@
                 <div class="icon"><i class="ion-ios-eye-outline"></i></div>
               </div>
               <h2 class="title"><a href="#">Our Vision</a></h2>
-              <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui
-                ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+              <p style="text-align:justify">
+                TechieNest is moving ahead with an ideology where practical and theory are equally emphasized. In the vast growing ‘Technical Era’ we are rising with a mission to expand the set boundaries of the ‘techie-brains’ to Explore, Invent and Innovate!
               </p>
             </div>
           </div>
@@ -286,27 +288,23 @@
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="icon ion-arrow-graph-up-right"></i></div>
             <h4 class="title"><a href="">Stages For aIRC'19</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
-              sint occaecati cupiditate non provident</p>
+            <p class="description">First is to get through the synopsis submission of projects. Second is clearning Zonals to be held in different colleges, and then you get Ticket to IIT Bombay. </p>
           </div>
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-bookmarks"></i></div>
             <h4 class="title"><a href="">Process Guidelines</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat tarad limino ata</p>
+            <p class="description">The project should be based on any of our four stated themes. Students qualifying the synopsis submission and Zonal rounds are elegible for FINALE</p>
           </div>
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-paper"></i></div>
             <h4 class="title"><a href="">Problem Statements</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur</p>
+            <p class="description">In aIRC’19, teams have to submit an idea (problem and solution of that particular problem) based on any or all of our four themes. These ideas should cover a particular field that can reduce human efforts</p>
           </div>
           <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-trophy"></i></div>
             <h4 class="title"><a href="">Accolades</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum</p>
-          </div>
+            <p class="description">Prizes and rewards worth upto 1 Lakh.</p>
+            <p class="description">Scholarship for all the finalists in TechieNest SITP(Summer Industrial Training Program) 2019.</p>          </div>
           {% comment %} <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-barcode"></i></div>
             <h4 class="title"><a href="">Nemo Enim</a></h4>
@@ -816,42 +814,98 @@
           </div>
 
         </div>
-
+        
+        <div class="container">
+        {% comment %} <form action="" method="post">
+          <div class="col-md-6">
+            {{ form.name }}
+            {{ form.email }}
+          </div>
+          <div class=col-md-6>
+            {{ form.phone }}
+            {{ form.body }}
+          </div>
+          <center><input type="submit" value="Submit"></center>
+        </form> {% endcomment %}
+          <center><form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-danger">SUBMIT</button>
+          </form> 
+        </div></center>
+    </div>
+    </section><!-- #contact -->
     <!--
 
      -->
-
-    <div class="container">
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Regsiter</button>
+    <section id="register"   >
+      <div class="container">
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Regsiter</button>
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog model-lg">
+        <div class="modal fade" id="myModal" role="document">
+          <div class="modal-dialog">
       
         <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Modal Header</h4>
-          </div>
-          <div class="modal-body">
-            <p>Some text in the modal.</p>
-            <form method="post">
-              {% csrf_token %}
-              {{ form.as_p }}
-              <button type="submit">SUBMIT</button>
+            <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h3 class="modal-title">Register Yourself for the BIG Event</h3>
+            </div>
+            <div class="modal-body">
+              <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">SUBMIT</button>
               </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-        
-      </div>
-    </div></div>        
 
+          
+        </div>
+
+{% comment %} 
+        <div class="container">
+<h1>Bootstrap Modal with custom size</h1>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch Modal window
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">�</span></button>
+        <h4 class="modal-title" id="myModalLabel">Custom height and width</h4>
+      </div>
+      <div class="modal-body">
+        <form method="post">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">SUBMIT</button>
+              </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn btn-primary" data-dismiss="modal">OK</button>
+        <button type="button" class="btn btn btn-success" data-dismiss="modal">Save</button>
+        <button type="button" class="btn btn-warning" data-dismiss="modal">Cancel</button>
+      </div>
     </div>
-    </section><!-- #contact -->
+  </div>
+</div>
+  {% endcomment %}
+
+
+        
+      </div>        
+    </section>
+
 
   </main>
 
@@ -901,12 +955,9 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore
-              legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit"  value="Subscribe">
-            </form>
+            <div class="mapouter"><div class="gmap_canvas">
+		        <iframe width="161" height="268" id="gmap_canvas" src="https://maps.google.com/maps?q=TechieNest%20in%20jaipur&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/webdesign-koeln/"></a></div><style>.mapouter{text-align:right;height:268px;width:161px;}.gmap_canvas {overflow:hidden;background:none!important;height:268px;width:161px;}</style>
+	          </div>
           </div>
 
         </div>
