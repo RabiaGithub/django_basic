@@ -80,6 +80,7 @@
         <div class="carousel-inner" role="listbox">
 
           <div class="carousel-item active">
+<<<<<<< HEAD
             <div class="carousel-background"><img src={% static "img/ IoT_2.jpg" %}></div>
           </div>
 
@@ -97,6 +98,31 @@
 
           <div class="carousel-item">
             <div class="carousel-background"><img src={% static "img/Airc slide 3.jpg" %}></div>
+=======
+            <div class="carousel-background"><img src={% static "img/1.jpg" %}></div>
+            <div class="carousel-container">
+              {% comment %} <div class="carousel-content">
+                <a href="#featured-services" class="btn-get-started scrollto">Register for training</a>
+              </div> {% endcomment %}
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src={% static "img/IoT_2.jpg" %}></div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src={% static "img/jpg" %}></div>
+          
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src={% static "img/intro-carousel/2.jpg" %}></div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src={% static "img/intro-carousel/2.jpg" %}></div>
+>>>>>>> 654aa17a7f9119f34e72a2bcf4c986941dcc5034
           </div>
 
         </div>
@@ -120,7 +146,11 @@
     <!--==========================
       Featured Services Section
     ============================-->
+<<<<<<< HEAD
    <!--  <section id="featured-services">
+=======
+    {% comment %} <section id="featured-services">
+>>>>>>> 654aa17a7f9119f34e72a2bcf4c986941dcc5034
       <div class="container">
         <div class="row">
 
@@ -148,7 +178,11 @@
           </div>
         </div>
       </div>
+<<<<<<< HEAD
     </section>#featured-services -->
+=======
+    </section><!-- #featured-services --> {% endcomment %}
+>>>>>>> 654aa17a7f9119f34e72a2bcf4c986941dcc5034
 
     <!--==========================
       About Us Section
@@ -698,8 +732,8 @@ technologies which will become the future of the world.
 
         <div class="section-header">
           <h3>Contact Us</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error
-            sit voluptatem accusantium doloremque</p>
+          <p><strong>GET IN TOUCH..!!</strong>
+          <br>Visit our TechieNest Centres across country or drop your Query here..</br></p>
         </div>
 
         <div class="row contact-info">
@@ -713,27 +747,41 @@ technologies which will become the future of the world.
                 Gopalpura Mode, Jaipur,
                 Rajasthan 302018 </address>
             </div>
-          </div>
-
-          <div class="col-md-4">
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Phone Number</h3>
               <p><a href="tel:+155895548855">+91 7340033091</a></p>
             </div>
-          </div>
-
-          <div class="col-md-4">
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
               <p><a href="mailto:info@example.com">tn.airc18@gmail.com</a></p>
             </div>
+
+
           </div>
 
-        </div>
+          <div class="col-md-8">
+            <div class="container">
+
+              <form method="post">
+              {% csrf_token %}
+              {{ form.as_p }}
+              <button type="submit" class="btn btn-danger">SUBMIT</button>
+              </form>
+            </div>
+          </div>
+          {% comment %} <div class="col-md-4">
+            
+          </div>
+
+          <div class="col-md-4">
+            
+          </div>
+
+        </div> {% endcomment %}
         
-        <div class="container">
+        
         {% comment %} <form action="" method="post">
           <div class="col-md-6">
             {{ form.name }}
@@ -744,13 +792,15 @@ technologies which will become the future of the world.
             {{ form.body }}
           </div>
           <center><input type="submit" value="Submit"></center>
-        </form> {% endcomment %}
+        </form> 
+
+
           <center><form method="post">
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit" class="btn btn-danger">SUBMIT</button>
           </form> 
-        </div></center>
+        </div></center>{% endcomment %}
     </div>
     </section><!-- #contact -->
     <!--
@@ -833,14 +883,18 @@ technologies which will become the future of the world.
   <!--==========================
     Footer
   ============================-->
-  <footer id="footer">
+   <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Airc</h4>
+<<<<<<< HEAD
             <img class="img12" src={% static "img/unnamed.png" %}>
+=======
+            <img class="img" src={% static "img/unnamed.png" %}>
+>>>>>>> 654aa17a7f9119f34e72a2bcf4c986941dcc5034
           </div>
           
           <div class="col-lg-3 col-md-6 footer-contact">
